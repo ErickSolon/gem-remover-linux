@@ -1,3 +1,5 @@
+#!/bin/bash
+
 gem1=$(gem list --local | cut -d " " -f 1 | tr "\n" " ")
 gem2=$(cat Gemfile | grep -E "gem [a-z.]*" | cut -d " " -f 2 | tr "'" " " )
 
